@@ -1,0 +1,213 @@
+* {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 30px;
+    background-image: url('1325115.png');
+    font-family: Arial, sans-serif;
+    
+
+  }
+  .to-do-list{
+    flex: 1;
+    /* text-align: center; */
+    /* margin-top:100px; */
+    padding: 20px;
+    border-radius: 5px;
+   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.279);
+    margin: 20px;
+  
+  }
+  
+  .to-do-list h4{
+   
+    color: rgba(255, 255, 255, 0.585);
+    margin: 15px;
+  }
+  button{
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+.main-title{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(206, 244, 206);
+
+  text-align: center;
+  padding: 30px auto;
+  margin-bottom: 20px;
+}
+
+  .container{
+    display: flex;
+    /* height: 100vh; */
+  }
+  .RightBar{
+    padding: 10px 20px;
+    background-color: #5c837495;  
+    margin: 20px;
+    min-width: 350px;
+    border-radius: 5px;
+  }
+  .task-over-view-heading{
+   text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(206, 244, 206);
+  }
+  .task-metrics{
+    display: flex;
+    flex-direction: column;
+  
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.537);
+    margin-bottom: 15px;
+  }
+  .task-metrics span{
+    margin-bottom: 10px;
+  }
+
+  .leftBar{
+    padding: 30px 10px;
+    background-color: #5c837495;  
+    margin: 20px;
+    min-width: 250px;
+    border-radius: 5px;
+  }
+  .filter-option{
+    background-color: transparent;
+    padding: 15px;
+  }
+  .filter-option:hover{
+    background-color: rgba(0, 0, 0, 0.421);
+  }
+  .choosen-option{
+    background-color: rgba(0, 0, 0, 0.421);
+
+  }
+
+
+
+  .add-button{
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 30px;
+    width: 30px;
+    color: white;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .add-button:hover{
+    transform: rotate(90deg);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .delete-button{
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+  }
+  .delete-button:hover{
+    transform: translateY(-8px);
+  }
+  .move-button{
+    visibility: hidden;
+    background-color: transparent;
+  }
+  .move-button:hover{
+    /* background-color: rgba(0, 162, 255, 1); */
+    
+  }
+
+  .task-input{
+    background-color: rgba(0, 0, 0, 0.412);
+   box-shadow: 1px 1px 1px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+  }
+  input[type="text"]{
+    width: 100%;
+    color: white;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: cursive;
+    font-style: italic;
+    border: 0;
+    background-color: transparent;
+  }
+  .feedback{
+    color: rgba(255, 255, 255, 0.603);
+    font-size: 12.5px;
+    margin-bottom: 20px;
+  }
+  
+  
+    ol{
+      padding: 0;
+    }
+    li{
+      font-family: cursive;
+
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.421);
+      color: white;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+  
+    }
+    .single-task{
+      transition: transform 0.4s ease-in-out;
+      
+    }
+    .single-task:hover{
+      transform: scale(1.02);
+    }
+    .single-task:hover .move-button{
+      visibility: visible;
+    }
+
+    .text{
+      flex:1;
+      margin: 10px;
+    }
+    .compleated{
+      text-decoration: line-through;
+      font-style: italic;
+    }
+    .completed-time{
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.626);
+      font-size: 13px;
+    }
+    .delete-button, .move-button{
+      padding: 8px 12px;
+      font-size: 1.2rem;
+      margin-left: 10px;
+    }
+    .edit-button{
+      background-color: transparent;
+      color: rgb(0, 47, 255);
+      font-size: 0.9rem;
+
+    }
+    .save-task{
+      background-color: transparent;
+      color: rgb(0, 47, 255);
+      font-size: 1rem;
+    }
